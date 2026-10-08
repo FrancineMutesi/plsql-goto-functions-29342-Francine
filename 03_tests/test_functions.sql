@@ -1,3 +1,5 @@
+-- Test script for the PL/SQL functions in this assignment
+-- Tests annual salary, years of service, tax, and department name.
 SET SERVEROUTPUT ON;
 
 SELECT calculate_annual_salary(500000) AS annual_salary FROM dual;

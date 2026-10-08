@@ -27,3 +27,6 @@ The tests produced the expected results, including annual salary of 6,000,000, 1
 ## Conclusion
 
 This assignment improved my understanding of PL/SQL control structures, GOTO statements, functions, exception handling, and testing in Oracle Database. It also helped me practice organizing SQL files and documenting my work for GitHub.
+## GitHub Documentation
+
+I also learned how to organize PL/SQL source files, test scripts, screenshots, and documentation in a structured GitHub repository. This helped me understand the importance of keeping programming work organized and clearly documented.

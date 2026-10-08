@@ -74,6 +74,12 @@ Validates a salary and returns an appropriate validation result.
 - *A3:* Illegal GOTO demonstration
 - *A4:* Rewrite without GOTO
 
+## Assumptions
+
+The assignment did not specify detailed tax brackets, so the tax function uses a simple rule for testing: salaries up to 300,000 have no tax, while salaries above 300,000 are taxed at 10%.
+
+For payroll validation, a positive salary is considered VALID, zero or negative salary is considered INVALID, and NULL input returns INVALID INPUT.
+
 ## Testing
 
 The functions were tested using Oracle SQL*Plus. The test scripts demonstrate the functions individually and in a SELECT statement.

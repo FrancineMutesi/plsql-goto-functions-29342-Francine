@@ -1,0 +1,22 @@
+CREATE OR REPLACE FUNCTION validate_payroll
+(
+    p_salary NUMBER
+)
+RETURN VARCHAR2
+IS
+BEGIN
+    IF p_salary IS NULL THEN
+        RAISE VALUE_ERROR;
+    ELSIF p_salary > 0 THEN
+        RETURN 'VALID';
+    ELSE
+        RETURN 'INVALID';
+    END IF;
+
+EXCEPTION
+    WHEN VALUE_ERROR THEN
+        RETURN 'INVALID INPUT';
+    WHEN OTHERS THEN
+        RETURN 'ERROR';
+END;
+/
